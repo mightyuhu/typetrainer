@@ -1,0 +1,28 @@
+{
+  "name": "typetrainer",
+  "version": "0.0.1",
+  "description": "Type Trainer is an online typing tool",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-haml": "~0.1.1",
+    "grunt-contrib-jshint": "~0.7.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-compass": "~0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typing",
+    "type",
+    "trainer"
+  ],
+  "author": "Benedikt Wolters",
+  "license": "BSD-2-Clause"
+}

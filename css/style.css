@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500);
+/* line 5, ../sass/style.scss */
+body {
+  background: #333;
+  background-repeat: repeat;
+  min-height: 100%;
+  font-family: 'Open Sans';
+  background-attachment: fixed;
+  color: white;
+}
+/* line 6, ../sass/style.scss */
+body #wrapper {
+  left: 50%;
+  width: 900px;
+  position: absolute;
+  top: 50%;
+  height: 240px;
+  margin-top: -120px;
+  margin-left: -450px;
+  /* negative half of the height */
+}
+/* line 11, ../sass/style.scss */
+body #left {
+  width: 350px;
+  float: left;
+}
+/* line 15, ../sass/style.scss */
+body A, body A:link, body A:visited, body A:active {
+  text-decoration: none;
+  color: orange;
+}
+/* line 19, ../sass/style.scss */
+body #right {
+  width: 500px;
+  float: left;
+}
+/* line 30, ../sass/style.scss */
+body:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9ImNlbnRlciIgY3k9ImVsbGlwc2UiIHI9IjEwMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwKSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjkpIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(radial, center ellipse cover, 0, center ellipse cover, 100, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  background-image: -webkit-radial-gradient(center ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background-image: -moz-radial-gradient(center ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background-image: -o-radial-gradient(center ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background-image: radial-gradient(center ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  min-height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* line 45, ../sass/style.scss */
+body h1 {
+  line-height: 1em;
+  font-size: 3em;
+  font-weight: 700;
+  color: #6CBFDE;
+  margin: 0rem 0.5rem 0.5rem 5rem;
+  padding: 0;
+}
+/* line 53, ../sass/style.scss */
+body h2 {
+  margin: 0;
+  padding: 0 5rem;
+  font-weight: normal;
+  line-height: 1.2em;
+  font-size: 1.7em;
+}
+/* line 60, ../sass/style.scss */
+body #intro, body #score {
+  color: #878787;
+  padding: 0 5rem;
+  font-size: 0.7em;
+  margin-bottom: 1rem;
+}
+/* line 66, ../sass/style.scss */
+body #score {
+  padding: 0 1rem;
+}
+/* line 69, ../sass/style.scss */
+body #reload:hover {
+  opacity: 1;
+}
+/* line 72, ../sass/style.scss */
+body #reload {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-appearance: none;
+  background-image: url(https://cdn1.iconfinder.com/data/icons/iphone_toolbar_icons/iphone_toolbar_icons/reload.png);
+  background-repeat: no-repeat;
+  display: block;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  margin-top: 0.5rem;
+  float: right;
+  width: 40px;
+  height: 40px;
+}
+/* line 88, ../sass/style.scss */
+body #lesson, body #input-lifo, body #lesson-select, body #lesson-label {
+  background: transparent;
+  margin-left: 1rem;
+  width: 500px;
+  font-family: monospace;
+  font-size: 2em;
+  outline: 0;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em;
+}
+/* line 102, ../sass/style.scss */
+body #lesson-select {
+  font-family: monospace;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  background: #4B4B4B;
+  border: 0;
+  outline: 0;
+}
+/* line 112, ../sass/style.scss */
+body #lesson-label, body #lesson-select {
+  font-size: 1em;
+  width: auto;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+/* line 118, ../sass/style.scss */
+body #lesson-label {
+  margin-left: 1rem;
+  letter-spacing: 3px;
+  padding-left: 0;
+  font-family: 'Open Sans';
+}
+/* line 124, ../sass/style.scss */
+body #input-lifo {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(147, 147, 147, 0.3)), color-stop(100%, rgba(147, 147, 147, 0)));
+  outline: 0;
+  border: none;
+  box-shadow: none;
+}
+/* line 129, ../sass/style.scss */
+body #input-lifo.hasMiss {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #ff6600;
+}

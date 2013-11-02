@@ -1,0 +1,134 @@
+@import "compass";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500);
+//TODO: scss is totally fucked up, needs refactoring
+
+body{
+  #wrapper {
+    left:50%;
+    width:900px; 
+    position:absolute; top:50%; height:240px; margin-top:-120px;margin-left:-450px; /* negative half of the height */}
+  
+  #left{
+    width:350px;
+    float:left;
+  }
+  A,A:link,A:visited,A:active{
+    text-decoration:none;
+    color:orange;
+  }
+  #right{
+    width:500px;
+    float:left;
+  }
+  background: #333;
+  background-repeat: repeat;
+  min-height: 100%;
+  font-family:'Open Sans';
+  background-attachment: fixed;
+  color: white;
+
+  &:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    $experimental-support-for-svg: true;
+    @include background-image(radial-gradient(center ellipse cover, rgba(black,0) 0%,rgba(black,.9) 100%));
+    min-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+    
+  h1{
+    line-height: 1em;
+    font-size:3em;
+    font-weight:700;
+    color:#6CBFDE;
+    margin: 0rem 0.5rem 0.5rem 5rem;
+    padding: 0;
+  }
+  h2{
+    margin:0;
+    padding: 0 5rem;
+    font-weight:normal;
+    line-height:1.2em;
+    font-size:1.7em;
+  }
+  #intro,#score{
+    color:#878787;
+    padding: 0 5rem;
+    font-size:0.7em;
+    margin-bottom:1rem;
+  }
+  #score{
+    padding: 0 1rem;
+  }
+  #reload:hover{
+  opacity:1;
+  }
+  #reload{
+    @include transition(all 0.3s ease-in-out);
+    -webkit-appearance:none;
+    background-image:url(https://cdn1.iconfinder.com/data/icons/iphone_toolbar_icons/iphone_toolbar_icons/reload.png);
+    background-repeat:no-repeat;
+    display:block;
+    background-color:transparent;
+    border:0;
+    outline:0;
+    cursor:pointer;
+    opacity:0.5;
+    margin-top:0.5rem;
+    float:right;
+    width:40px;
+    height:40px;
+  }
+  #lesson,#input-lifo,#lesson-select,#lesson-label{
+    background: transparent;
+    margin-left:1rem;
+    width:500px;
+    font-family: monospace;
+    font-size:2em;
+    outline:0;
+    color:white;
+    font-weight:bold;
+    padding:0.5em;
+    //stumbled upon a chrome bug here:
+    //https://code.google.com/p/chromium/issues/detail?id=294134
+    //&:first-letter{color:orange;}
+  }
+  #lesson-select{
+    font-family: monospace;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    background:#4B4B4B;
+    border:0;
+    outline:0;
+  }
+ 
+  #lesson-label,#lesson-select{
+    font-size:1em;
+    width:auto;
+    font-weight:normal;
+    margin-bottom:1em;
+  }
+  #lesson-label{
+    margin-left:1rem;
+    letter-spacing:3px;
+    padding-left:0;
+    font-family:'Open Sans';
+  }
+  #input-lifo{
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(147, 147, 147,0.3)), color-stop(100%,rgba(147, 147, 147,0.0)));
+    outline:0;
+    border:none;
+    box-shadow:none;
+    &.hasMiss{
+      @include transition(all 0.3s ease-in-out);
+      color:#ff6600;
+    }
+  }
+}
