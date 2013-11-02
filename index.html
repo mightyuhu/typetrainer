@@ -14,36 +14,38 @@
       window.jQuery || document.write('<script src="/js/jquery-1.9.1.min.js"><\/script>')
     </script>
     <script src='/dist/typetrainer.min.js'></script>
-    <div id='cell'>
-      <div id='left'>
-        <h1>Typing Trainer</h1>
-        <h2>optimize your hit quote</h2>
-        <div id='intro'>
-          small unsophisticated tool for learning the english keyboard
+    <div id='wrapper'>
+      <div id='cell'>
+        <div id='left'>
+          <h1>Typing Trainer</h1>
+          <h2>optimize your hit quote</h2>
+          <div id='intro'>
+            small unsophisticated tool for learning the english keyboard
+          </div>
+          <br>
+          by
+          <a href='https://mightyuhu.github.io/'>Benedikt Wolters</a>
         </div>
-        <br>
-        by
-        <a href='https://mightuhu.github.io/'>Benedikt Wolters</a>
-      </div>
-      <div id='right'>
-        <div id='lesson'></div>
-        <input id='input-lifo' placeholder='start copying here from above' type='text'>
-        <div id='score'></div>
-        <label for='lesson-select' id='lesson-label'>Lesson</label>
-        <select id='lesson-select'>
-          <option selected='selected' value='random-full'>fully random</option>
-          <option value='random-letter'>random letters</option>
-          <option value='random-spechial'>random spechial chars</option>
-          <option value='wikipedia'>Wikipedia article</option>
-          <option value='random-yz'>Z/Y difference</option>
-          <option value='random-homerow'>homerow</option>
-          <option value='random-toprow'>toprow</option>
-          <option value='random-bottomrow'>bottomrow</option>
-          <option value='random-homerow-toprow'>homerow/toprow</option>
-          <option value='random-homerow-bottomrow'>homerow/bottomrow</option>
-          <option value='random-numberspechials'>numberspechials</option>
-        </select>
-        <button id='reload'></button>
+        <div id='right'>
+          <div id='lesson'></div>
+          <input id='input-lifo' placeholder='start copying here from above' type='text'>
+          <div id='score'></div>
+          <label for='lesson-select' id='lesson-label'>Lesson</label>
+          <select id='lesson-select'>
+            <option selected='selected' value='random-full'>fully random</option>
+            <option value='random-letter'>random letters</option>
+            <option value='random-spechial'>random spechial chars</option>
+            <option value='wikipedia'>Wikipedia article</option>
+            <option value='random-yz'>Z/Y difference</option>
+            <option value='random-homerow'>homerow</option>
+            <option value='random-toprow'>toprow</option>
+            <option value='random-bottomrow'>bottomrow</option>
+            <option value='random-homerow-toprow'>homerow/toprow</option>
+            <option value='random-homerow-bottomrow'>homerow/bottomrow</option>
+            <option value='random-numberspechials'>numberspechials</option>
+          </select>
+          <button id='reload'></button>
+        </div>
       </div>
     </div>
   </body>

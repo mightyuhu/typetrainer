@@ -115,30 +115,31 @@
         -# Custom JS
 
         %script{:src => "/dist/typetrainer.min.js"}
-        #cell
-            #left
-                %h1 Typing Trainer
-                %h2 optimize your hit quote
-                #intro
-                    small unsophisticated tool for learning the english keyboard 
-                %br
-                by 
-                %a{href:'https://mightuhu.github.io/'} Benedikt Wolters
-            #right
-                #lesson
-                %input#input-lifo{placeholder: "start copying here from above", type: "text"}/
-                #score
-                %label#lesson-label{for:"lesson-select"} Lesson
-                %select#lesson-select
-                    %option{value:'random-full', selected:"selected"} fully random
-                    %option{value:'random-letter'} random letters
-                    %option{value:'random-spechial'} random spechial chars
-                    %option{value:'wikipedia'} Wikipedia article         
-                    %option{value:'random-yz'} Z/Y difference
-                    %option{value:'random-homerow'} homerow
-                    %option{value:'random-toprow'} toprow
-                    %option{value:'random-bottomrow'} bottomrow
-                    %option{value:'random-homerow-toprow'} homerow/toprow
-                    %option{value:'random-homerow-bottomrow'} homerow/bottomrow
-                    %option{value:'random-numberspechials'} numberspechials
-                %button#reload
+        #wrapper
+            #cell
+                #left
+                    %h1 Typing Trainer
+                    %h2 optimize your hit quote
+                    #intro
+                        small unsophisticated tool for learning the english keyboard 
+                    %br
+                    by 
+                    %a{href:'https://mightyuhu.github.io/'} Benedikt Wolters
+                #right
+                    #lesson
+                    %input#input-lifo{placeholder: "start copying here from above", type: "text"}/
+                    #score
+                    %label#lesson-label{for:"lesson-select"} Lesson
+                    %select#lesson-select
+                        %option{value:'random-full', selected:"selected"} fully random
+                        %option{value:'random-letter'} random letters
+                        %option{value:'random-spechial'} random spechial chars
+                        %option{value:'wikipedia'} Wikipedia article         
+                        %option{value:'random-yz'} Z/Y difference
+                        %option{value:'random-homerow'} homerow
+                        %option{value:'random-toprow'} toprow
+                        %option{value:'random-bottomrow'} bottomrow
+                        %option{value:'random-homerow-toprow'} homerow/toprow
+                        %option{value:'random-homerow-bottomrow'} homerow/bottomrow
+                        %option{value:'random-numberspechials'} numberspechials
+                    %button#reload
