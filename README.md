@@ -5,7 +5,7 @@ See [online version](https://typetrainer.herokuapp.com).
 
 
 #Author
-Benedkt Wolters
+[Benedikt Wolters](http://mightyuhu.github.io)
 
 #License
 BSD-2-Clause
